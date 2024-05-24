@@ -71,8 +71,7 @@ const Component3 = () => {
       <div className="component-container">
         {!loading && countries.length === 0 && (
           <>
-            
-            <div className="universal">
+            <div className="flexing">
               <input
                 className="input-box"
                 type="number"
@@ -100,9 +99,11 @@ const Component3 = () => {
           </div>
         )}
         {!loading && countries.length > 0 && (
-          <ul>
+          <ul className="country-list">
             {paginatedCountries.map((country) => (
-              <li key={country.country_id}>{country.country_name}</li>
+              <li className="country-item" key={country.country_id}>
+                {country.country_name}
+              </li>
             ))}
           </ul>
         )}
@@ -121,7 +122,6 @@ const Component3 = () => {
           )}
         </div>
       </div>
-     
     </div>
   );
 };
