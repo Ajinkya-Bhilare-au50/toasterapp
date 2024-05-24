@@ -1,0 +1,37 @@
+.toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  
+}
+.toast:hover{
+    cursor: pointer;
+}
+
+.toast-message {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.toast-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.toast-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  background: #4caf50;
+}

@@ -68,12 +68,13 @@ const Component2 = () => {
         Display Toast
       </button>
       <ToastContainer
-        position="bottom-center"
+        position="bottom-right"
         autoClose={toastDuration}
         hideProgressBar={false}
         newestOnTop={true}
         closeOnClick
         pauseOnHover
+        toastStyle={{ backgroundColor: "#b9e58b", color: "white" }}
       />
 
       {modalOpen && (

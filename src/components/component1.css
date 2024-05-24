@@ -1,0 +1,45 @@
+.component1 {
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+button.show-toast {
+  background-color: #007bff;
+}
+
+button.settings {
+  background-color: #28a745;
+}
+
+.toast-counter {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+.toast {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.9;
+}
