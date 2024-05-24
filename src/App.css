@@ -1,38 +1,200 @@
+/* Styles for the entire app container */
 .App {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Styles for the header */
+.Header {
+  background-color: #dc3545;
+  font-size: 1.4rem;
+  padding: 1.2rem;
+  text-transform: capitalize;
+  transition: background 0.2s;
+  color: white;
+
+  display: flex;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #dc3545;
+}
+
+/* Styles for the main content area */
+.MainContent {
+  display: flex;
+
+}
+
+/* Styles for individual components */
+.Component {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Styles for specific components */
+.Component1 {
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem;
+}
+
+.Component2 {
+  background-color: #ffc107;
+  text-decoration: none;
+  padding: 1.2rem;
+}
+
+.Component3 {
+  background-color: rgb(8 51 68);
+  text-decoration: none;
+  color: white;
+  padding: 1.2rem;
+}
+.Component1:hover {
+  background-color: #53b96a;
+}
+.Component2:hover {
+  background-color: #ffd451;
+}
+.Component3:hover {
+  background-color: #214757;
+}
+.loading-spinner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+/* ----------------------------- */
+.component2 {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input-box {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.setting-button,
+.display-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+
+.setting-button:hover,
+.display-button:hover {
+  background-color: #842029;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.duration-input {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.close-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.close-button:hover {
+  background-color: #842029;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toast-gradient {
+  background: linear-gradient(45deg, #fbc02d, #ffeb3b);
+  color: black;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.toast-gradient .Toastify__toast-body {
+  color: black;
+}
+
+.toast-gradient .Toastify__close-button {
+  color: black;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 50vh; /* Adjust based on your layout */
+  
+}
+.universal{
+  display: flex;
+  gap: 10px;
+}
+/* --------------------------------------- */
+.Notfoundcontainer {
+  background-color: rgb(236, 170, 37);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ------Footer----------------------------- */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer p {
+  margin: 0;
+  color: #333;
+}
+
+
