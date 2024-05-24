@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { ClipLoader } from "react-spinners";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./Component3.css";
 
 const Component3 = () => {
@@ -31,11 +33,12 @@ const Component3 = () => {
       setLoading(false);
       setIsCountdownActive(false);
     } catch (error) {
-      setError("Error fetching Country List. Please retry.");
+    //   setError("Error fetching Country List. Please retry.");
       setLoading(false);
       setIsCountdownActive(false);
+      toast.error("Error fetching Country List. Please retry.");
       setTimeout(() => {
-        setError(null); //
+        setError(null);
       }, 3000);
     }
   };
@@ -68,6 +71,7 @@ const Component3 = () => {
 
   return (
     <div className="main-container">
+      <ToastContainer  theme="dark"/>
       <div className="component-container">
         {!loading && countries.length === 0 && (
           <>

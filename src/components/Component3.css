@@ -22,6 +22,7 @@
 }
 .country-list {
   list-style-type: none;
+  background-color: #fcebec;
   padding: 0;
 }
 

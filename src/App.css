@@ -46,9 +46,10 @@
 }
 
 .Component2 {
-  background-color: #ffc107;
+  background-color: #e8af04;
   text-decoration: none;
   padding: 1.2rem;
+  color: #333;
 }
 
 .Component3 {
@@ -204,5 +205,10 @@
   align-items: center;
 }
 
-
+.Navbaricon{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
 
