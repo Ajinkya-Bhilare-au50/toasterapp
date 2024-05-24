@@ -71,14 +71,14 @@ const Component3 = () => {
       <div className="component-container">
         {!loading && countries.length === 0 && (
           <>
-            <p>Enter Count Down Time</p>
+            
             <div className="universal">
               <input
                 className="input-box"
                 type="number"
                 value={timerInput}
                 onChange={handleInputChange}
-                placeholder="Enter seconds"
+                placeholder=" CountDown Time in seconds"
               />
               <button
                 className="display-button"

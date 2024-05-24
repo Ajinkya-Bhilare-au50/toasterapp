@@ -51,13 +51,13 @@ const Component2 = () => {
   };
 
   return (
-    <div className="component2">
-      <div>
+    <div className="component2 ">
+      <div className="universal">
         <input
           type="text"
           value={inputValue}
           onChange={handleInputChange}
-          placeholder="Enter something..."
+          placeholder="Enter Your Text..."
           className="input-box"
         />
       </div>
