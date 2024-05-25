@@ -29,7 +29,11 @@ const Component2 = () => {
       setInputValue(""); 
     } else {
       toast.warn("Maximum 3 toasts allowed", {
-        position: "top-center",
+        position: "top-bottom",
+        style: {
+          backgroundColor: "black", 
+          color: "white",
+        },
       });
     }
   };

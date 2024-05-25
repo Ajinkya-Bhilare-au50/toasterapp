@@ -13,7 +13,9 @@ const Navbar = () => {
 
   return (
     <div className="Navbar">
-      <div className="Header">Header</div>
+      <Link to="/" className="Header">
+        Header
+      </Link>
       <div className="Navbaricon">
         <a
           rel="noreferrer"
@@ -22,7 +24,11 @@ const Navbar = () => {
         >
           <VscGithub className="icon" size={34} color="white" />
         </a>
-        <a rel="noreferrer" href="https://www.linkedin.com/in/ajinkya-bhilare/">
+        <a
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/ajinkya-bhilare/"
+          target="_blank"
+        >
           <FaLinkedin className="icon" size={34} color="white" />
         </a>
       </div>

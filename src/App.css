@@ -12,6 +12,7 @@
   text-transform: capitalize;
   transition: background 0.2s;
   color: white;
+  text-decoration: none;
 
   display: flex;
 }

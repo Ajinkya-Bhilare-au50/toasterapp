@@ -99,7 +99,7 @@ const Component3 = () => {
             <ClipLoader color="#842029" size={25} />
             {countdown > 0
               ? `Fetching data in ${countdown} seconds...`
-              : "Loading Data. Please Wait..."}
+              : "Loading & Fetching Data Now. Please Wait..."}
           </div>
         )}
         {!loading && countries.length > 0 && (
