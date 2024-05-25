@@ -211,4 +211,24 @@
   align-items: center;
   gap: 4px;
 }
+/* icons */
+.icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+/* ---------selected css---------- */
+.Navbar .MainContent a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.Navbar .MainContent a.selected {
+  background-color: rgb(248, 245, 245);
+  color: black;
+  font-weight: bold;
+}
 
