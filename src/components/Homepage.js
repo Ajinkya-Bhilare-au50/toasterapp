@@ -18,7 +18,7 @@ const HomePage = () => {
   const mainStyle = {
     flex: "1",
     padding: "20px",
-    overflowY: "auto", // Allows content to be scrollable if it overflows
+    overflowY: "auto", 
   };
 
   const footerStyle = {
